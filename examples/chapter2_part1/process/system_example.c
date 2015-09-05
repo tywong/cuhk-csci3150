@@ -4,7 +4,7 @@
 int main(void)
 {
 	printf("before system ...\n");
-	system("ls");
+	system("ls -l");
 	printf("after system ...\n");
 	return 0;
 }

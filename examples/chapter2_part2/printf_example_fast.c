@@ -1,4 +1,4 @@
-#include <stdio.h>	// required by printf()
+#include <stdio.h>
 
 #define MAX	100000
 
