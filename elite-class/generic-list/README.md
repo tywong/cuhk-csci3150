@@ -60,7 +60,7 @@ list_del(&(node.list));
 struct data_type head, *p;
 // "head" is the head node
 // "p" is for list traversal
-list_for_each_entry(p, &(h.list), list) {
+list_for_each_entry(p, &(head.list), list) {
   // p is pointing to each member node in the list //
   printf("%d\n", p->data);
 }
@@ -74,7 +74,7 @@ Note that it is an anti-pattern that you delete list members while you are using
 struct data_type head, *p, *safe_p;
 // "head" is the head node
 // "p" is for list traversal
-list_for_each_entry(p, safe_p, &(h.list), list) {
+list_for_each_entry_safe(p, safe_p, &(head.list), list) {
   // p is pointing to each member node in the list //
   printf("%d\n", p->data);
   list_del(&(p->list));
