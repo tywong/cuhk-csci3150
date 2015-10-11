@@ -5,7 +5,9 @@
 
 void handler(int sig) {
 	static int count = 0;
+	int i;
 	printf("count = %d\n", ++count);
+	usleep(100000);
 }
 
 int main(void) {
@@ -13,7 +15,7 @@ int main(void) {
 	if(fork() == 0) {
 		printf("Press Enter...\n");
 		getchar();
-		for(i = 0; i < 10; i++)
+		for(i = 0; i < 100000; i++)
 			kill(getppid(), SIGQUIT);
 	}
 	else {

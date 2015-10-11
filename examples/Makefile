@@ -15,6 +15,9 @@ all:
 		make -C $$dir; \
 	done
 
+chapter3_part2:
+	make -k -C chapter3_part2
+
 clean:
 	for dir in $(SUBDIRS) ; \
 	do \

@@ -3,12 +3,12 @@
 #include <unistd.h>	// alarm()
 #include <signal.h>	// "SIGALRM", signal()
 
-#define TIMEOUT	5
+#define TIMEOUT	2
 
 void sig_handler(int sig)
 {
-	printf("\nTimeout! Goodbye!\n");
-//	exit(0);
+	printf("\nTimeout! Go on!\n");
+	alarm(TIMEOUT);
 }
 
 int main(void)

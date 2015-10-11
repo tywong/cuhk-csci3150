@@ -6,7 +6,7 @@
 			for(i = 1; i <= (in); i++) \
 				p = p * i; \
 			p; \
-		});
+		})
 
 int main(void) {
 	int ans = FACTORIAL(6);

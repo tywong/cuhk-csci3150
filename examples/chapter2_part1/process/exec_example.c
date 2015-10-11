@@ -2,11 +2,12 @@
 #include <unistd.h>	// required by execl()
 
 int main(void) {
+	int i = 10;
 	printf("before execl...\n");
 
-	execl("/bin/ls", "/bin/ls", "-l", "-a", NULL);
+	execl("/bin/xxx", "/bin/ls", "-l", "-a", NULL);
 
-	printf("after execl...\n");
+	printf("after execl...(%d)\n", i);
 
 	return 0;
 }

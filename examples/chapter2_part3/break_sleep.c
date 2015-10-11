@@ -10,7 +10,7 @@ int main(void) {
 	signal(SIGINT, signal_handler);
 	printf("I'm sleeping for 24 hours...\n");
 	if(sleep(60 * 60 * 24) != 0) {
-		perror("sleep");
+		perror("haha");
 	}
 	printf("Wake up and die\n");
 	return 0;

@@ -8,8 +8,10 @@
 int main(void) {
   int a = 1, b = 2;
   double c = 3, d = 4;
-  SWAP(a, b);
-  SWAP(c, d);
+	if(1 == 1)
+  	SWAP(a, b);
+	else
+	  SWAP(c, d);
   printf("a: %d, b: %d, c: %lf, d: %lf\n", a, b, c, d);
 
   return 0;

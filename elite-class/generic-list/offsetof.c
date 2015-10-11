@@ -15,6 +15,9 @@ struct foobar {
 	double f;
 };
 
+
+[0...32]
+
 int main(void) {
 	printf("offset of a = %u\n", offsetof(struct foobar, a));
 	printf("offset of b = %u\n", offsetof(struct foobar, b));
