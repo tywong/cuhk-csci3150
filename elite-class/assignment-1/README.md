@@ -39,7 +39,7 @@ Is it an interesting assignment?
 
 ## Deadline and Demonstration
 
-The deadline of this assignment is 16:30, 2015 Nov 6 (Friday). We will have demonstrations for every student:
+The deadline of this assignment is **16:30, 2015 Nov 6 (Friday)**. We will have demonstrations for every student:
 
 1. You will run your program in front of the class using the projector!
 2. You will explain your strategy in realizing the unfair scheduling scheme(s). The time limit is 5 minutes.
