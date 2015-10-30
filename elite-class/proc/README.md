@@ -23,6 +23,7 @@ This LKM is to print data out only. You have two sub-tasks:
     1234568709   # more recent jiffies value
     $
     ```
+
 ## Task 2: /proc/buffer_test
 
 This buffer test code is copied from "*The Linux Documentation Project*" (tldp). The original code allows you to do the following:
