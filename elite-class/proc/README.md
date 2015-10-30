@@ -47,6 +47,7 @@ Now, you can going to add the **mutual exclusion** access control to `/proc/buff
   $ cat /proc/buffer_test
   _        <-- Blocked!  Will release when Terminal 1 releases the lock.
   ```
+  
   ```
   ## Terminal 3 ##
   $ echo "a quick brown fox jumps over a lazy dog" > /proc/buffer_test
