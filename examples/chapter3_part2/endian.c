@@ -5,7 +5,7 @@ int main(void) 	{
 	int i;
 	unsigned char *ptr = (unsigned char *) &temp;
 
-	if(ptr[i] == 0xef) {
+	if(ptr[0] == 0xef) {
 		printf("This CPU is little endian, i.e., ending value in small (little) address\n");
 	}
 	else {
