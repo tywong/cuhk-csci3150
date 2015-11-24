@@ -13,7 +13,6 @@ EXE=\
 	data_small \
 	data_large \
 	global_1gb \
-	global_2gb \
 	global_3gb \
 	global_4gb \
 	stack \
@@ -22,6 +21,8 @@ EXE=\
 	oom_v1 \
 	oom_v2 \
 	code_start \
+	stack_overflow \
+	global_2gb \
 
 all: ${EXE}
 

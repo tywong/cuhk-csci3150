@@ -57,6 +57,8 @@ The switch `-k` means *"keep going"*.
 
 - `max_stack.c`. This program allocates a space of 8MB on the stack. It usually fails unless you use the command `ulimit` to change the stack size limit.
 
+- `stack_overflow.c`. This program allocates stack space through recursion. The main function already allocates stack space of more than 8000KB. The recursive function ``recursion`` keeps allocating an extra 40KB of stack space through its local variables.
+
 - `malloc_distance.c`. This program demonstrates the distance (in bytes) between two adjacent allocated memory blocks. The distance implies that the `malloc()` call reserves space for each `malloc()` call.
 
   Note importantly that this example only works how the amount of allocation is smaller than 128KB. Beyond 128KB, `malloc()` uses `mmap()` for memory allocation.
